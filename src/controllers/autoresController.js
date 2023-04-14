@@ -20,14 +20,16 @@ class AutorController {
 
     static cadastrarAutor = (req, res) => {
         let autor = new autores(req.body);
+    
         autor.save((err) => {
-            if (err) {
-                res.status(500).send({message: `${err.message} - falha ao cadastrar autor.`});
-            } else {
-                res.status(201).send(Autor.toJson());
-            };
-        });
-    };
+    
+          if(err) {
+            res.status(500).send({message: `${err.message} - falha ao cadastrar Autor.`})
+          } else {
+            res.status(201).send(autor.toJSON())
+          }
+        })
+      }
 
     static atualizarAutor = (req, res) => {
         const id = req.params.id;
