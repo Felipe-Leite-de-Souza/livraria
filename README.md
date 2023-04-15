@@ -26,6 +26,8 @@ A API fornece algumas funcionlidades dentre elas:
 
 Para funcionamento da API é necessário que o desenvolvedor crie o banco, neste caso foi utilizado o MOngoDB Atlas, e insira o usuário, senha e o nome do banco no arquivo src/config/dbConnect.js.
 
+Para criar uma conta e o banco de dados no MongoDB Atlas, por favor acesse: https://account.mongodb.com/account/login
+
 ```bash
 OBS: FOi disponibilizado para download uma coleção Postman para facilitar eventuais testes e chamadas para a API que pode ser encontrada na pasta collection_postman.
 ```
